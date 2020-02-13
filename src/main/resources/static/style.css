@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html,
@@ -15,11 +16,20 @@ body {
     overflow-x: hidden;
 }
 
+
+/*Header/Title*/
+
+.title {
+    display: inline-block;
+    color: aqua;
+}
+
+/*Navigations*/
+
 .main-nav {
     float: left;
     list-style: none;
     margin-top: 55px;
-    background-color: #4463ea;
 }
 
 .main-nav li{
@@ -49,3 +59,7 @@ body {
 
 
 /*IMAGE*/
+
+img {
+    max-height: 150px;
+}
