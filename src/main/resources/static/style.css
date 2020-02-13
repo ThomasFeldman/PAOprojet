@@ -21,7 +21,17 @@ body {
 
 .title {
     display: inline-block;
-    color: aqua;
+    color: #fff;
+}
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../Mind-Palace-05.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Mind-Palace-05.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-width: 100%;
+    background-attachment: fixed;
 }
 
 /*Navigations*/
@@ -61,5 +71,6 @@ body {
 /*IMAGE*/
 
 img {
-    max-height: 150px;
+    max-width: 100%;
+    max-height: 500px;
 }

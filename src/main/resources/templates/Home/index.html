@@ -8,9 +8,20 @@
     </head>
     
     <body class="container">
-        <h1 class="title">PAO Home Page</h1>
-        <div><img src="../../banner.jpg" alt="mind-palace"></div>
-        <nav></nav>
+        <header>
+            <h1 class="title">PAO Home Page</h1>
+
+
+            <div class="row">
+                <nav th:fragment="navigation">
+                    <ul class="main-nav">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/list">Categories</a></li>
+                        <li><a href="/quiz">Quiz</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
 
         <form method="post" style="max-width:600px;" th:object="${category}">
             <div class="form-group">
@@ -22,14 +33,5 @@
             <input type="submit" value="Add Category" />
         </form>
 
-        <div class="row">
-            <nav th:fragment="navigation">
-                <ul class="main-nav">
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/list">Categories</a></li>
-                    <li><a href="/quiz">Quiz</a></li>
-                </ul>
-            </nav>
-        </div>  
     </body>
 </html>
