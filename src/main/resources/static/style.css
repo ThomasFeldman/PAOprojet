@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
 }
 
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 /*Header/Title*/
 
@@ -25,36 +29,40 @@ body {
 }
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../Mind-Palace-05.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Mind-Palace-05.png);
-    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/Mind-Palace-05.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Mind-Palace-05.png);
+    background-size: contain; /*CHANGE TO COVER WHEN UNDER A CERTAIN AMOUNT OF PIXELS*/
     background-position: center;
     height: 100vh;
     max-width: 100%;
     background-attachment: fixed;
 }
 
+
+.hero-text-box {
+    position: absolute;
+    max-width: 1140px;
+}
 /*Navigations*/
 
 .main-nav {
-    float: left;
+    float: right;
     list-style: none;
     margin-top: 55px;
+
 }
 
 .main-nav li{
     display: inline-block;
-    margin-left: 30px;
-    margin-right: 10px;
-    
-
+    margin-left: 40px;
+    overflow-y: hidden;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited{
     padding: 8px 0px;
 /*    color: #fff;*/
-/*    text-decoration: none;*/
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;

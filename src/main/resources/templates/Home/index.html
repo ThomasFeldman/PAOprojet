@@ -9,17 +9,26 @@
     
     <body class="container">
         <header>
-            <h1 class="title">PAO Home Page</h1>
-
-
+            <div class="hero-text-box">
+                <h1 class="title">PAO Pal</h1>
+            </div>
+            
+            
             <div class="row">
                 <nav th:fragment="navigation">
                     <ul class="main-nav">
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/list">Categories</a></li>
-                        <li><a href="/quiz">Quiz</a></li>
+                        <li><a href="/home">Posts</a></li>
+                        <li><a href="/list">List</a></li>
+                        <li><a href="/train">Train</a></li>
                     </ul>
                 </nav>
+                <nav th:fragment="navigation">
+                    <ul class="main-nav">
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Register</a></li>
+                    </ul>
+                </nav>
+                
             </div>  
         </header>
 
