@@ -33,7 +33,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Mind-Palace-05.png);
     background-size: contain; /*CHANGE TO COVER WHEN UNDER A CERTAIN AMOUNT OF PIXELS*/
     background-position: center;
-    height: 100vh;
+    height: 100vh; /* Consider adding text and two buttons, one for newbs and one for people who have accounts, newb button scrolls them down lower to basic PAO information section.*/
     max-width: 100%;
     background-attachment: fixed;
 }
