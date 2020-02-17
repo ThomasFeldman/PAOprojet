@@ -2,7 +2,7 @@
 
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
     <head th:replace="fragments :: head">
-    
+        <link rel="stylesheet" type="text/css" href="../../static/vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="../../static/style.css">
     
     </head>
@@ -24,8 +24,8 @@
                 </nav>
                 <nav th:fragment="navigation">
                     <ul class="main-nav">
-                        <li><a href="/login">Login</a></li>
-                        <li><a href="/register">Register</a></li>
+                        <li class="btn btn-full"><a href="/login">Login</a></li>
+                        <li class="btn btn-full"><a href="/register">Register</a></li>
                     </ul>
                 </nav>
                 
