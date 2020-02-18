@@ -9,38 +9,31 @@
     
     <body class="container">
         <header>
-            <div class="hero-text-box">
-                <h1 class="title">PAO Pal</h1>
+            <div class="hero-text-box title">
+                <h1 >Person-Action-Object</h1>
+                <h2>Your memory's secret weapon</h2>
             </div>
             
             
             <div class="row">
                 <nav th:fragment="navigation">
-                    <ul class="main-nav">
+                    <ul class="sticky main-nav">
                         <li><a href="/home">Posts</a></li>
                         <li><a href="/list">List</a></li>
                         <li><a href="/train">Train</a></li>
+                        <li class="btn-login"><a href="/login">Login</a></li>
+                        <li class="btn-register"><a href="/register">Register</a></li>
                     </ul>
                 </nav>
-                <nav th:fragment="navigation">
-                    <ul class="main-nav">
-                        <li class="btn btn-full"><a href="/login">Login</a></li>
-                        <li class="btn btn-full"><a href="/register">Register</a></li>
-                    </ul>
-                </nav>
+
                 
             </div>  
         </header>
-
-        <form method="post" style="max-width:600px;" th:object="${category}">
-            <div class="form-group">
-                <label th:for="name">Name</label>
-                <input class="form-control" th:field="*{name}" />
-                <span th:errors="*{name}" class="error"></span>
-            </div>
-
-            <input type="submit" value="Add Category" />
-        </form>
-
+        
+        <div>
+            <h2>What is PAO?</h2>
+        
+        </div>
+        
     </body>
 </html>
