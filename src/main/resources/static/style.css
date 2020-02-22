@@ -134,28 +134,35 @@ img {
 
 /* Sections */
 
-.pao-description {
+.sec-type1 {
     background-color: #efefef;
 }
 
-.pao-uses {
+.sec-type2 {
     background-color: white;
 }
 
-
-/* Paragraph */
-/*
-h2 {
-    padding: 20px;
+.sec-title{
+    margin-top: 50px;
+    text-align: center;
 }
-*/
+
+
 
 
 .long-copy{
-    line-height: 145%;
+    line-height: 140%;
     width: 70%;
     margin-left: 15%;
 /*    font-size: 120%;*/
     font-weight: 300;
-    padding: 80px;
+    padding: 50px;
+}
+
+#how-h3 {
+    text-align: center;
+}
+
+#howto-example {
+    margin-top: -20px;
 }
