@@ -123,13 +123,20 @@ header {
     background-color: #3498db;
 }
 
-/*IMAGE*/
+/*IMAGE/VIDEO*/
 
 img {
     max-width: 100%;
     max-height: 500px;
 }
 
+iframe {
+    width: 60%;
+    height: 70vh;
+    position: relative; 
+    left: 20%; 
+    margin-top: 25px; 
+}
 
 
 /* Sections */
@@ -154,7 +161,6 @@ img {
     line-height: 140%;
     width: 70%;
     margin-left: 15%;
-/*    font-size: 120%;*/
     font-weight: 300;
     padding: 50px;
 }
