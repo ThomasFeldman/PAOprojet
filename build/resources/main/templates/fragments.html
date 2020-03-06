@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+    <head th:fragment="head">
+        <meta charset="UTF-8"/>
+        <title th:text="${title}">MyPAO-Pal</title>
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+    </head>
+    <body>
+        <div class="row">
+            <nav th:fragment="navigation">
+                <ul class="main-nav">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/list">Categories</a></li>
+                    <li><a href="/quiz">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>                
+    </body>
+</html>

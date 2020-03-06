@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+    <head th:replace="fragments :: head">
+        <link rel="stylesheet" type="text/css" href="../../static/vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="../../static/style.css">
+        
+        <title>List</title>
+
+    </head>
+    
+    <body class="container">
+        <div>    
+            
+            <div class="row">
+                <nav th:fragment="navigation">
+                    <ul class="sticky main-nav">
+                        <li class="post-nav-btn"><a href="../Home/index.html">Home</a></li>
+                        <li class="list-nav-btn"><a href="../Posts/post.html">Posts</a></li>
+                        <li class="train-nav-btn"><a href="../Train/train.html">Train</a></li>
+                        <li class="btn-login"><a href="/login">Login</a></li>
+                        <li class="btn-register"><a href="/register" class="register-text">Register</a></li>
+                    </ul>
+                </nav>
+
+                
+            </div>  
+        </div>
+        
+        
+        
+       
+        <div>
+            <table>
+              <tr>
+                <th></th>
+                <th>Person</th>
+                <th>Action</th>
+                <th>Object</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td></td>
+                <td>Germany</td>
+                <td>gssdgsdg</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+                <td>lasdf</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+              </tr>
+                
+            </table>
+        </div>
+        
+    </body>
+</html>
