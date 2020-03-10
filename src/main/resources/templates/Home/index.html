@@ -4,13 +4,48 @@
     <head th:replace="fragments :: head">
         <link rel="stylesheet" type="text/css" href="../../static/vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="../../static/style.css">
+        <link rel="stylesheet" type="text/css" href="../../static/vendors/css/navbar.css">
+        
+<!-- Nabbed from bootsnip -->
+<!--        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<!--        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        ---- Include the above in your HEAD tag --------
     
         <title>Home</title>
 
     </head>
     
     <body class="container">
+        
         <header>
+        
+        <!-- Nabbed from bootsnipp -->
+        
+        <div class="wrapper fadeInDown">
+          <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+              <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <form>
+              <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+              <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+              <input type="submit" class="fadeIn fourth" value="Log In">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+              <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+
+          </div>
+        </div>
+        
             <div class="hero-text-box title">
                 <h1 >Person-Action-Object</h1>
                 <h2>Advanced Memory Training</h2>
@@ -20,6 +55,7 @@
             <div class="row">
                 <nav th:fragment="navigation">
                     <ul class="sticky main-nav">
+                        <img src="../../img/brainlogo.png" id="logo">
                         <li class="post-nav-btn"><a href="../Posts/post.html">Posts</a></li>
                         <li class="list-nav-btn"><a href="../List/list.html">List</a></li>
                         <li class="train-nav-btn"><a href="../Train/train.html">Train</a></li>
@@ -31,6 +67,9 @@
                 
             </div>  
         </header>
+        
+        
+        
         
         <section class="sec-type1">
             <h2 class="sec-title">Introduction</h2>
@@ -83,7 +122,9 @@
                 <strong>Post</strong> is where you can share your own PAO, view other people's PAOs, or write a post about PAOs should the inspiration strike you. This is a useful tool for beginnners who might not know the best way to structure their PAOs.
             </p>
             
-        </section><section class="sec-type1">
+        </section>
+        
+        <section class="sec-type1">
             
             <h2 class="sec-title">Still Confused?</h2>
             
@@ -92,6 +133,9 @@
             </iframe>
             
         </section>
+        
+        
+
         
     </body>
 </html>

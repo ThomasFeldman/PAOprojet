@@ -86,6 +86,10 @@ header {
     border-bottom:2px solid #efefef;
 }
 
+#logo{
+    height: 50px;
+    
+}
 /* STICKY NAV */
 .sticky {
     position: fixed;
@@ -112,7 +116,7 @@ header {
 /* Buttons */
 
 .btn-login {
-    padding-left: 600px;
+    padding-left: 550px;
 }
 
 .btn-register {
